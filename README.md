@@ -6,14 +6,14 @@ Initial code from https://nodejs.org/en/docs/guides/nodejs-docker-webapp/
 
 To build manually:
 
-    $ docker build -t brianfive/simple-express-docker:latest .
+    $ docker build -t entitymaker.com/pub/minimal-express:latest .
     $ docker login
-    $ docker push brianfive/simple-express-docker:latest
+    $ docker push entitymaker.com/pub/minimal-express:latest
 
 ## Running Docker image
 
     # run in foreground (ctrl-c to stop)
-    $ docker run -p 44444:8080 -it brianfive/simple-express-docker
+    $ docker run -p 44444:8080 -it entitymaker.com/pub/minimal-express
 
     # run in background as daemon
-    $ docker run -p 44444:8080 -d brianfive/simple-express-docker
+    $ docker run -p 44444:8080 -d entitymaker.com/pub/minimal-express
