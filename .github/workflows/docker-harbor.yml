@@ -17,7 +17,7 @@ jobs:
     - uses: actions/checkout@v3
     - name: BuildAndPushImageOnHarbor
       run: |
-        docker build ./ -t harbor.entitymaker.com/pub/minimal-express:${{ github.run_number }}
-        docker push harbor.entitymaker.com/pub/minimal-express:${{ github.run_number }}
+        docker build ./ -t harbor.entitymaker.com/pub/minimal-express:latest
+        docker push harbor.entitymaker.com/pub/minimal-express:latest
     
 
